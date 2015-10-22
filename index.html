@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link data-require="bootstrap@*" data-semver="3.3.5" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script data-require="angular.js@*" data-semver="2.0.0-alpha.31" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script src="index.js"></script>
+  </head>
+
+  <body ng-app="myApp">
+    <div class="mainContainer" >
+      <div ng-controller="mainController">
+        <h1>Hello Peddamanishi!</h1>
+       <input type="text" ng-model="data.label">
+       <input type="text" ng-model="data.class">
+       <button class="btn {{data.class}}"> {{data.label}} </button>
+       <button class="btn {{data.class}}"> {{data.label}} </button>
+     </div>
+    </div>
+  </body>
+
+</html>
+
+
